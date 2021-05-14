@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #d9514eff;
+  --blue: #04c2c9;
+  --black: rgb(34, 38, 48);
+  --white: #fff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../images/black-pattern.jpg);
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+}
+
+.hero-img {
+    background-image: url(../images/black-pattern.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  /* background: var(--black); */
+  height: 50px;
+  /* border-bottom: 4px solid var(--blue); */
+  /* border-top: 4px solid var(--blue); */
+  background-image: url(../images/black-pattern.jpg);
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+}
+
+.page-link a {
+  color: var(--white);
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 20px;
+}
+
+.page-link a:hover {
+  color: var(--red);
+}
+
+.section-title h2 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--black);
+    border-bottom: 3px solid var(--black);
+    margin: 0 auto 35px auto;
+    width: 20%;
+}
+
+/* Project tabs */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-wrap {
+    position: relative;
+    width: 400px;
+    
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 ,0 , 0, .6);
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.project-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.project-overlay:hover > * {
+    transform: translateY(0px);
+}
+
+.project-overlay:hover {
+    opacity: 1;
+}
+
+.project-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.project-desc {
+    font-size: 1.25em;
+    margin-top: .25em;
+}
+
+/* Project tabs end */
