@@ -15,4 +15,4 @@ https://colesammons.github.io/Portfolio/#home
 
 Cole Sammons
 
-![Website home page](../assets/images/website.png)
+![Website home page](./assets/images/website.png)
